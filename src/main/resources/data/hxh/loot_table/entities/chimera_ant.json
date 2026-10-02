@@ -2,17 +2,25 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [{ "type": "minecraft:item", "name": "minecraft:string",
-        "functions": [{ "function": "minecraft:set_count", "count": { "min": 0, "max": 2 } }] }]
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 0, "max": 2 } }
+          ],
+          "name": "minecraft:string"
+        }
+      ],
+      "rolls": 1
     },
     {
-      "rolls": 1,
-      "conditions": [
-        { "condition": "minecraft:killed_by_player" },
-        { "condition": "minecraft:random_chance", "chance": 0.05 }
+      "condition": { "type": "minecraft:killed_by_player" },
+      "entries": [
+        { "type": "minecraft:item", "name": "hxh:water_leaf", "weight": 1 },
+        { "type": "minecraft:empty", "weight": 19 }
       ],
-      "entries": [{ "type": "minecraft:item", "name": "hxh:water_leaf" }]
+      "rolls": 1
     }
-  ]
+  ],
+  "random_sequence": "hxh:entities/chimera_ant"
 }
