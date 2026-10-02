@@ -64,7 +64,9 @@ public class BigBangImpactAbility extends AbstractNenAbility {
         // Coup principal
         target.hurtServer(level, player.damageSources().playerAttack(player), damage);
         Vec3 push = target.position().subtract(player.position()).normalize();
-        target.knockback(1.0D + 2.0D * chargeRatio, -push.x, -push.z);
+        double strength = 1.0D + 2.0D * chargeRatio;
+        target.setDeltaMovement(target.getDeltaMovement().add(push.x * strength, 0.4D + 0.3D * chargeRatio, push.z * strength));
+        target.hurtMarked = true; // force l'envoi de la nouvelle vitesse au client
 
         // Onde de choc : dégâts réduits autour de l'impact, aucun bloc détruit
         Vec3 impact = target.position().add(0, target.getBbHeight() / 2, 0);
@@ -77,7 +79,7 @@ public class BigBangImpactAbility extends AbstractNenAbility {
         level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, impact.x, impact.y, impact.z, 1, 0, 0, 0, 0);
         level.sendParticles(ParticleTypes.END_ROD, impact.x, impact.y, impact.z, 40, 0.6, 0.6, 0.6, 0.25);
         level.playSound(null, impact.x, impact.y, impact.z, SoundEvents.GENERIC_EXPLODE.value(),
-                SoundSource.PLAYERS, 1.2F, 0.8F + level.random.nextFloat() * 0.2F);
+                SoundSource.PLAYERS, 1.2F, 0.8F + level.getRandom().nextFloat() * 0.2F);
         return true;
     }
 

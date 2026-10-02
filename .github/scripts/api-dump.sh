@@ -41,3 +41,11 @@ dumpg net.minecraft.client.gui.components.AbstractWidget "render|extract"
 for c in $(unzip -l "$JAR" | awk '{print $4}' | grep -E "^net/minecraft/client/gui/[A-Za-z]+\.class$" | sed 's/\.class$//; s#/#.#g'); do
   if javap -cp "$CP" -public "$c" 2>/dev/null | grep -q " fill(int, int, int, int, int)"; then dump "$c"; fi
 done
+dumpg net.minecraft.client.gui.Gui "screen|hide|Screen"
+dumpg net.minecraft.client.Minecraft "Screen"
+section "GuiLayer (source)"; for n in $NEO; do unzip -p "$n" net/neoforged/neoforge/client/gui/GuiLayer.java 2>/dev/null | grep -vE "^\s*(\*|/)" ; done >> $OUT
+javap -cp "$CP" -protected net.minecraft.client.model.monster.spider.SpiderModel >> $OUT 2>&1
+dumpg net.minecraft.client.model.geom.ModelLayers "SPIDER"
+section "LivingEntityRenderer (protected)"; javap -cp "$CP" -protected net.minecraft.client.renderer.entity.LivingEntityRenderer | grep -iE "texture|createRenderState|LivingEntityRenderer\(" >> $OUT
+section "Mob (protected) ai"; javap -cp "$CP" -protected net.minecraft.world.entity.Mob | grep -iE "customServerAiStep|registerGoals|getAmbientSound" >> $OUT
+section "Entity hurtMarked"; javap -cp "$CP" -public net.minecraft.world.entity.Entity | grep -iE "hurtMarked|setDeltaMovement|hurtServer" >> $OUT

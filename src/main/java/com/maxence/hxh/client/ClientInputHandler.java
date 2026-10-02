@@ -25,7 +25,7 @@ public final class ClientInputHandler {
         if (player == null) return;
 
         while (ModKeyMappings.OPEN_NEN_MENU.consumeClick()) {
-            if (mc.screen == null) mc.setScreen(new NenScreen());
+            if (mc.gui.screen() == null) mc.setScreenAndShow(new NenScreen());
         }
         while (ModKeyMappings.TOGGLE_REN.consumeClick()) ClientPacketDistributor.sendToServer(new ToggleModePayload(NenMode.REN));
         while (ModKeyMappings.TOGGLE_ZETSU.consumeClick()) ClientPacketDistributor.sendToServer(new ToggleModePayload(NenMode.ZETSU));
@@ -35,7 +35,7 @@ public final class ClientInputHandler {
     }
 
     private static void tickBigBangCharge(Minecraft mc, LocalPlayer player) {
-        boolean canCharge = mc.screen == null
+        boolean canCharge = mc.gui.screen() == null
                 && ClientNenData.isAwakened()
                 && ClientNenData.hasAbility(BigBangImpactAbility.ID)
                 && !ClientNenData.isModeActive(NenMode.ZETSU)
@@ -54,7 +54,6 @@ public final class ClientInputHandler {
         } else if (charging) {
             if (bigBangCharge >= NenAbilities.BIG_BANG_IMPACT.getMinCharge()) {
                 ClientPacketDistributor.sendToServer(new UseAbilityPayload(BigBangImpactAbility.ID, bigBangCharge));
-                player.swing(net.minecraft.world.InteractionHand.MAIN_HAND);
             }
             charging = false;
             bigBangCharge = 0;

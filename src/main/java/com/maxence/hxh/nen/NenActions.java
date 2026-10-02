@@ -76,7 +76,7 @@ public final class NenActions {
     }
 
     public static void notify(ServerPlayer player, String message, ChatFormatting color) {
-        player.displayClientMessage(Component.literal(message).withStyle(color), true);
+        player.sendOverlayMessage(Component.literal(message).withStyle(color));
     }
 
     private NenActions() {}

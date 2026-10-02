@@ -2,7 +2,7 @@ package com.maxence.hxh.client;
 
 import com.maxence.hxh.nen.NenMode;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.DeltaTracker;
 
 /**
@@ -14,9 +14,9 @@ public final class AuraHud {
     private static final int BAR_WIDTH = 81;   // même largeur que la barre de faim
     private static final int BAR_HEIGHT = 5;
 
-    public static void render(GuiGraphics g, DeltaTracker deltaTracker) {
+    public static void render(GuiGraphicsExtractor g, DeltaTracker deltaTracker) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null || mc.options.hideGui || mc.player.isSpectator()) return;
+        if (mc.player == null || mc.player.isSpectator()) return;
         if (!ClientNenData.isAwakened()) return;
 
         int screenW = g.guiWidth();

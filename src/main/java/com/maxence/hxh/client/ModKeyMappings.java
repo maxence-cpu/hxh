@@ -14,13 +14,13 @@ public final class ModKeyMappings {
     public static final KeyMapping.Category CATEGORY = new KeyMapping.Category(HxHMod.id("hxh"));
 
     public static final KeyMapping OPEN_NEN_MENU = new KeyMapping("key.hxh.nen_menu",
-            InputConstants.Type.KEYSYM, InputConstants.KEY_H, CATEGORY);
+            InputConstants.Type.KEYBOARD, InputConstants.KEY_H, CATEGORY);
     public static final KeyMapping TOGGLE_REN = new KeyMapping("key.hxh.ren",
-            InputConstants.Type.KEYSYM, InputConstants.KEY_R, CATEGORY);
+            InputConstants.Type.KEYBOARD, InputConstants.KEY_R, CATEGORY);
     public static final KeyMapping TOGGLE_ZETSU = new KeyMapping("key.hxh.zetsu",
-            InputConstants.Type.KEYSYM, InputConstants.KEY_Z, CATEGORY);
+            InputConstants.Type.KEYBOARD, InputConstants.KEY_Z, CATEGORY);
     public static final KeyMapping TOGGLE_EN = new KeyMapping("key.hxh.en",
-            InputConstants.Type.KEYSYM, InputConstants.KEY_G, CATEGORY);
+            InputConstants.Type.KEYBOARD, InputConstants.KEY_G, CATEGORY);
 
     public static void register(RegisterKeyMappingsEvent event) {
         event.registerCategory(CATEGORY);
