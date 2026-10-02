@@ -3,7 +3,7 @@
   "biomes": "#minecraft:is_jungle",
   "spawners": {
     "type": "hxh:chimera_ant",
-    "count": { "type": "minecraft:uniform", "min": 2, "max": 4 },
+    "count": { "type": "minecraft:uniform", "min_inclusive": 2, "max_inclusive": 4 },
     "weight": 40
   }
 }
