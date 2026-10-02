@@ -66,7 +66,6 @@ public class BigBangImpactAbility extends AbstractNenAbility {
         Vec3 push = target.position().subtract(player.position()).normalize();
         double strength = 1.0D + 2.0D * chargeRatio;
         target.setDeltaMovement(target.getDeltaMovement().add(push.x * strength, 0.4D + 0.3D * chargeRatio, push.z * strength));
-        target.hurtMarked = true; // force l'envoi de la nouvelle vitesse au client
 
         // Onde de choc : dégâts réduits autour de l'impact, aucun bloc détruit
         Vec3 impact = target.position().add(0, target.getBbHeight() / 2, 0);
