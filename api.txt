@@ -1,0 +1,575 @@
+MC JAR: build/moddev/artifacts/minecraft-patched-26.3.0.41-beta.jar
+NEO JARS: /home/runner/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.3.0.41-beta/6af76015d4196d3a61d8996355b98c71fe6915bd/neoforge-26.3.0.41-beta-userdev.jar
+/home/runner/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.3.0.41-beta/2e80143c38680b842636d4358856c4ef0803b5a0/neoforge-26.3.0.41-beta-sources.jar
+/home/runner/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.3.0.41-beta/da46818ee56a495ce5fb1db33e22c369a7eb5677/neoforge-26.3.0.41-beta-universal.jar
+
+===== classes client/gui (racine) =====
+net/minecraft/client/gui/ActiveTextCollector.class
+net/minecraft/client/gui/BundleMouseActions.class
+net/minecraft/client/gui/ComponentPath.class
+net/minecraft/client/gui/Font.class
+net/minecraft/client/gui/GlyphSource.class
+net/minecraft/client/gui/Gui.class
+net/minecraft/client/gui/GuiGraphicsExtractor.class
+net/minecraft/client/gui/Hud.class
+net/minecraft/client/gui/ItemSlotMouseAction.class
+net/minecraft/client/gui/TextAlignment.class
+
+===== classes Spider* =====
+net/minecraft/client/model/monster/spider/
+net/minecraft/client/model/monster/spider/SpiderModel.class
+net/minecraft/client/model/monster/spider/package-info.class
+net/minecraft/client/renderer/entity/CaveSpiderRenderer.class
+net/minecraft/client/renderer/entity/SpiderRenderer.class
+net/minecraft/client/renderer/entity/layers/SpiderEyesLayer.class
+assets/minecraft/post_effect/spider.json
+assets/minecraft/shaders/post/spiderclip.fsh
+assets/minecraft/textures/entity/spider/
+assets/minecraft/textures/entity/spider/cave_spider.png
+assets/minecraft/textures/entity/spider/spider.png
+assets/minecraft/textures/entity/spider/spider_eyes.png
+assets/minecraft/textures/item/cave_spider_spawn_egg.png
+assets/minecraft/textures/item/fermented_spider_eye.png
+assets/minecraft/textures/item/spider_eye.png
+assets/minecraft/textures/item/spider_spawn_egg.png
+data/minecraft/advancement/recipes/brewing/fermented_spider_eye.json
+data/minecraft/loot_table/entities/cave_spider.json
+data/minecraft/loot_table/entities/spider.json
+data/minecraft/recipe/brewing/lingering_potion_awkward_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_long_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_long_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_long_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_long_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_strong_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_strong_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_water_fermented_spider_eye.json
+data/minecraft/recipe/brewing/lingering_potion_water_spider_eye.json
+data/minecraft/recipe/brewing/potion_awkward_spider_eye.json
+data/minecraft/recipe/brewing/potion_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_long_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_long_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_long_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_long_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_strong_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_strong_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_water_fermented_spider_eye.json
+data/minecraft/recipe/brewing/potion_water_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_awkward_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_long_leaping_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_long_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_long_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_long_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_night_vision_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_strong_healing_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_strong_poison_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_swiftness_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_water_fermented_spider_eye.json
+data/minecraft/recipe/brewing/splash_potion_water_spider_eye.json
+data/minecraft/recipe/fermented_spider_eye.json
+data/minecraft/structure/trial_chambers/corridor/atrium/spider_relief.nbt
+data/minecraft/structure/trial_chambers/spawner/melee/spider.nbt
+data/minecraft/structure/trial_chambers/spawner/small_melee/cave_spider.nbt
+data/minecraft/trial_spawner/trial_chamber/melee/spider/
+data/minecraft/trial_spawner/trial_chamber/melee/spider/normal.json
+data/minecraft/trial_spawner/trial_chamber/melee/spider/ominous.json
+data/minecraft/trial_spawner/trial_chamber/small_melee/cave_spider/
+data/minecraft/trial_spawner/trial_chamber/small_melee/cave_spider/normal.json
+data/minecraft/trial_spawner/trial_chamber/small_melee/cave_spider/ominous.json
+data/minecraft/villager_trade/wandering_trader/fermented_spider_eye_emerald.json
+data/minecraft/worldgen/template_pool/trial_chambers/spawner/melee/spider.json
+data/minecraft/worldgen/template_pool/trial_chambers/spawner/small_melee/cave_spider.json
+net/minecraft/world/entity/monster/spider/
+net/minecraft/world/entity/monster/spider/CaveSpider.class
+net/minecraft/world/entity/monster/spider/Spider.class
+net/minecraft/world/entity/monster/spider/package-info.class
+assets/minecraft/items/cave_spider_spawn_egg.json
+assets/minecraft/items/fermented_spider_eye.json
+assets/minecraft/items/spider_eye.json
+assets/minecraft/items/spider_spawn_egg.json
+assets/minecraft/models/item/cave_spider_spawn_egg.json
+assets/minecraft/models/item/fermented_spider_eye.json
+assets/minecraft/models/item/spider_eye.json
+assets/minecraft/models/item/spider_spawn_egg.json
+
+===== classes *GuiLayer* / *Layer* neoforge =====
+net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.java
+net/neoforged/neoforge/client/event/RenderGuiLayerEvent.java
+net/neoforged/neoforge/client/gui/GuiLayer.java
+net/neoforged/neoforge/client/gui/GuiLayerManager.java
+net/neoforged/neoforge/client/gui/VanillaGuiLayers.java
+net/neoforged/neoforge/client/event/RegisterGuiLayersEvent$Ordering.class
+net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.class
+net/neoforged/neoforge/client/event/RenderGuiLayerEvent$Post.class
+net/neoforged/neoforge/client/event/RenderGuiLayerEvent$Pre.class
+net/neoforged/neoforge/client/event/RenderGuiLayerEvent.class
+net/neoforged/neoforge/client/gui/GuiLayer.class
+net/neoforged/neoforge/client/gui/GuiLayerManager$NamedLayer.class
+net/neoforged/neoforge/client/gui/GuiLayerManager.class
+net/neoforged/neoforge/client/gui/VanillaGuiLayers.class
+
+===== net.minecraft.client.gui.screens.Screen =====
+Compiled from "Screen.java"
+public abstract class net.minecraft.client.gui.screens.Screen extends net.minecraft.client.gui.components.events.AbstractContainerEventHandler implements net.minecraft.client.gui.components.Renderable {
+  public static final net.minecraft.resources.Identifier MENU_BACKGROUND;
+  public static final net.minecraft.resources.Identifier HEADER_SEPARATOR;
+  public static final net.minecraft.resources.Identifier FOOTER_SEPARATOR;
+  public static final net.minecraft.resources.Identifier INWORLD_HEADER_SEPARATOR;
+  public static final net.minecraft.resources.Identifier INWORLD_FOOTER_SEPARATOR;
+  public int width;
+  public int height;
+  public final java.util.List<net.minecraft.client.gui.components.Renderable> renderables;
+  public net.minecraft.network.chat.Component getTitle();
+  public net.minecraft.network.chat.Component getNarrationMessage();
+  public final void extractRenderStateWithTooltipAndSubtitles(net.minecraft.client.gui.GuiGraphicsExtractor, int, int, float);
+  public void extractRenderState(net.minecraft.client.gui.GuiGraphicsExtractor, int, int, float);
+  public boolean keyPressed(net.minecraft.client.input.KeyEvent);
+  public void clearFocus();
+  public boolean isInputCaptured();
+  public boolean shouldCloseOnEsc();
+  public void onClose();
+  public static java.util.List<net.minecraft.network.chat.Component> getTooltipFromItem(net.minecraft.client.Minecraft, net.minecraft.world.item.ItemStack);
+  public final void init(int, int);
+  public java.util.List<? extends net.minecraft.client.gui.components.events.GuiEventListener> children();
+  public void tick();
+  public void removed();
+  public void added();
+  public void extractBackground(net.minecraft.client.gui.GuiGraphicsExtractor, int, int, float);
+  public static void extractMenuBackgroundTexture(net.minecraft.client.gui.GuiGraphicsExtractor, net.minecraft.resources.Identifier, int, int, float, float, int, int);
+  public void extractTransparentBackground(net.minecraft.client.gui.GuiGraphicsExtractor);
+  public boolean isPauseScreen();
+  public boolean isInGameUi();
+  public boolean isAllowedInPortal();
+  public void resize(int, int);
+  public boolean isMouseOver(double, double);
+  public void onFilesDrop(java.util.List<java.nio.file.Path>);
+  public net.minecraft.client.Minecraft getMinecraft();
+  public void scheduleNarration();
+  public void afterMouseMove();
+  public void afterMouseAction();
+  public void afterKeyboardAction();
+  public void handleDelayedNarration();
+  public void triggerImmediateNarration(boolean);
+  public static net.minecraft.client.gui.screens.Screen$NarratableSearchResult findNarratableWidget(java.util.List<? extends net.minecraft.client.gui.narration.NarratableEntry>, net.minecraft.client.gui.narration.NarratableEntry);
+  public void updateNarratorStatus(boolean, net.minecraft.client.gui.narration.NarrationTrigger);
+  public net.minecraft.client.gui.Font getFont();
+  public boolean showsActiveEffects();
+  public boolean canInterruptWithAnotherScreen();
+  public net.minecraft.client.gui.navigation.ScreenRectangle getRectangle();
+  public net.minecraft.sounds.Music getBackgroundMusic();
+}
+
+===== net.minecraft.client.Minecraft | screen|gui|options|player  =====
+  public final net.minecraft.client.gui.Font font;
+  public final net.minecraft.client.gui.Font fontFilterFishy;
+  public final net.minecraft.client.gui.Gui gui;
+  public final net.minecraft.client.Options options;
+  public final net.minecraft.client.gui.components.debug.DebugScreenEntryList debugEntries;
+  public net.minecraft.client.player.LocalPlayer player;
+  public void resizeGui();
+  public void fullscreenStateChanged(boolean);
+  public net.minecraft.client.gui.screens.worldselection.WorldOpenFlows createWorldOpenFlows();
+  public void disconnectWithSavingScreen();
+  public void disconnectWithProgressScreen();
+  public void disconnectWithProgressScreen(boolean);
+  public void disconnect(net.minecraft.client.gui.screens.Screen, boolean);
+  public void disconnect(net.minecraft.client.gui.screens.Screen, boolean, boolean);
+  public void clearClientLevel(net.minecraft.client.gui.screens.Screen);
+  public void setScreenAndShow(net.minecraft.client.gui.screens.Screen);
+  public static void fillReport(net.minecraft.client.Minecraft, net.minecraft.client.resources.language.LanguageManager, java.lang.String, net.minecraft.client.Options, net.minecraft.CrashReport);
+  public net.minecraft.network.chat.Component grabPanoramixScreenshot(java.io.File);
+  public net.minecraft.client.gui.screens.social.PlayerSocialManager getPlayerSocialManager();
+  public void onTextInputFocusChange(net.minecraft.client.gui.components.events.GuiEventListener, boolean);
+  public net.minecraft.client.gui.components.DebugScreenOverlay getDebugOverlay();
+  public com.mojang.realmsclient.gui.RealmsDataFetcher realmsDataFetcher();
+  public boolean canInterruptScreen();
+
+===== com.mojang.blaze3d.platform.InputConstants$Type =====
+Compiled from "InputConstants.java"
+public final class com.mojang.blaze3d.platform.InputConstants$Type extends java.lang.Enum<com.mojang.blaze3d.platform.InputConstants$Type> {
+  public static final com.mojang.blaze3d.platform.InputConstants$Type KEYBOARD;
+  public static final com.mojang.blaze3d.platform.InputConstants$Type MOUSE;
+  public static com.mojang.blaze3d.platform.InputConstants$Type[] values();
+  public static com.mojang.blaze3d.platform.InputConstants$Type valueOf(java.lang.String);
+  public com.mojang.blaze3d.platform.InputConstants$Key getOrCreate(int);
+}
+
+===== com.mojang.blaze3d.platform.InputConstants | KEY_H|KEY_R|KEY_Z|KEY_G|Key  =====
+  public static final int KEY_G;
+  public static final int KEY_H;
+  public static final int KEY_R;
+  public static final int KEY_Z;
+  public static final int KEY_RIGHT;
+  public static final int KEY_GRAVE;
+  public static final int KEY_RBRACKET;
+  public static final int KEY_RALT;
+  public static final int KEY_RCONTROL;
+  public static final int KEY_RSHIFT;
+  public static final int KEY_RGUI;
+  public static final int KEY_RETURN;
+  public static final int KEY_HOME;
+  public static final com.mojang.blaze3d.platform.InputConstants$Key UNKNOWN;
+  public static com.mojang.blaze3d.platform.InputConstants$Key getKey(net.minecraft.client.input.KeyEvent);
+  public static com.mojang.blaze3d.platform.InputConstants$Key getKey(java.lang.String);
+
+===== net.minecraft.client.KeyMapping =====
+Compiled from "KeyMapping.java"
+public class net.minecraft.client.KeyMapping implements java.lang.Comparable<net.minecraft.client.KeyMapping>, net.neoforged.neoforge.client.extensions.IKeyMappingExtension {
+  public static void click(com.mojang.blaze3d.platform.InputConstants$Key);
+  public static void set(com.mojang.blaze3d.platform.InputConstants$Key, boolean);
+  public static void setAll();
+  public static void releaseAll();
+  public static void restoreToggleStatesOnScreenClosed();
+  public static void resetToggleKeys();
+  public static void resetMapping();
+  public net.minecraft.client.KeyMapping(java.lang.String, int, net.minecraft.client.KeyMapping$Category);
+  public net.minecraft.client.KeyMapping(java.lang.String, com.mojang.blaze3d.platform.InputConstants$Type, int, net.minecraft.client.KeyMapping$Category);
+  public net.minecraft.client.KeyMapping(java.lang.String, com.mojang.blaze3d.platform.InputConstants$Type, int, net.minecraft.client.KeyMapping$Category, int);
+  public net.minecraft.client.KeyMapping(java.lang.String, net.neoforged.neoforge.client.settings.IKeyConflictContext, com.mojang.blaze3d.platform.InputConstants$Type, int, net.minecraft.client.KeyMapping$Category);
+  public net.minecraft.client.KeyMapping(java.lang.String, net.neoforged.neoforge.client.settings.IKeyConflictContext, com.mojang.blaze3d.platform.InputConstants$Key, net.minecraft.client.KeyMapping$Category);
+  public net.minecraft.client.KeyMapping(java.lang.String, net.neoforged.neoforge.client.settings.IKeyConflictContext, net.neoforged.neoforge.client.settings.KeyModifier, com.mojang.blaze3d.platform.InputConstants$Type, int, net.minecraft.client.KeyMapping$Category);
+  public net.minecraft.client.KeyMapping(java.lang.String, net.neoforged.neoforge.client.settings.IKeyConflictContext, net.neoforged.neoforge.client.settings.KeyModifier, com.mojang.blaze3d.platform.InputConstants$Key, net.minecraft.client.KeyMapping$Category);
+  public com.mojang.blaze3d.platform.InputConstants$Key getKey();
+  public void setKeyConflictContext(net.neoforged.neoforge.client.settings.IKeyConflictContext);
+  public net.neoforged.neoforge.client.settings.IKeyConflictContext getKeyConflictContext();
+  public net.neoforged.neoforge.client.settings.KeyModifier getDefaultKeyModifier();
+  public net.neoforged.neoforge.client.settings.KeyModifier getKeyModifier();
+  public void setKeyModifierAndCode(net.neoforged.neoforge.client.settings.KeyModifier, com.mojang.blaze3d.platform.InputConstants$Key);
+  public boolean isDown();
+  public net.minecraft.client.KeyMapping$Category getCategory();
+  public boolean consumeClick();
+  public java.lang.String getName();
+  public com.mojang.blaze3d.platform.InputConstants$Key getDefaultKey();
+  public void setKey(com.mojang.blaze3d.platform.InputConstants$Key);
+  public int compareTo(net.minecraft.client.KeyMapping);
+  public static java.util.function.Supplier<net.minecraft.network.chat.Component> createNameSupplier(java.lang.String);
+  public boolean same(net.minecraft.client.KeyMapping);
+  public boolean isUnbound();
+  public boolean matches(net.minecraft.client.input.KeyEvent);
+  public boolean matchesMouse(net.minecraft.client.input.MouseButtonEvent);
+  public boolean matches(com.mojang.blaze3d.platform.InputConstants$Key);
+  public net.minecraft.network.chat.Component getTranslatedKeyMessage();
+  public boolean isDefault();
+  public java.lang.String saveString();
+  public void setDown(boolean);
+  public static net.minecraft.client.KeyMapping get(java.lang.String);
+  public int compareTo(java.lang.Object);
+}
+
+===== net.minecraft.client.Options | hide|gui =====
+  public boolean hideServerAddress;
+  public final net.minecraft.client.KeyMapping keyToggleGui;
+  public static final int AUTO_GUI_SCALE;
+  public static final int DEBUG_GUI_SCALE_UNCHANGED;
+  public net.minecraft.client.OptionInstance<java.lang.Boolean> hideLightningFlash();
+  public net.minecraft.client.OptionInstance<java.lang.Boolean> hideSplashTexts();
+  public net.minecraft.client.OptionInstance<java.lang.Boolean> hideMatchedNames();
+  public net.minecraft.client.OptionInstance<java.lang.Integer> guiScale();
+  public net.minecraft.client.OptionInstance<java.lang.Integer> debugGuiScale();
+
+===== net.minecraft.world.entity.LivingEntity | swing|knockback =====
+  public void dealDefaultKnockback(net.minecraft.world.damagesource.DamageSource, float, boolean);
+  public void knockback(double, double, double, net.minecraft.world.damagesource.DamageSource, float, boolean);
+  public void knockback(double, double, double, net.minecraft.world.damagesource.DamageSource, float);
+  public void swingAndResetAttackStrength(net.minecraft.world.InteractionHand, net.minecraft.world.item.component.SwingAnimation, boolean);
+  public boolean swing(net.minecraft.world.InteractionHand, net.minecraft.world.item.component.SwingAnimation, boolean);
+  public void causeExtraKnockback(net.minecraft.world.entity.Entity, float, net.minecraft.world.phys.Vec3, net.minecraft.world.damagesource.DamageSource, float, boolean);
+  public net.minecraft.world.entity.LivingEntity$SwingDescription getCurrentSwing();
+  public float getSwingAnimation(float);
+  public boolean isSwinging();
+
+===== net.minecraft.server.level.ServerPlayer | message|overlay|actionbar =====
+  public void sendSystemMessage(net.minecraft.network.chat.Component);
+  public void sendOverlayMessage(net.minecraft.network.chat.Component);
+  public void sendBuildLimitMessage(boolean, int);
+  public void sendSpawnProtectionMessage(net.minecraft.core.BlockPos);
+  public void sendSystemMessage(net.minecraft.network.chat.Component, boolean);
+  public void sendChatMessage(net.minecraft.network.chat.OutgoingChatMessage, boolean, net.minecraft.network.chat.ChatType$Bound);
+  public boolean shouldFilterMessageTo(net.minecraft.server.level.ServerPlayer);
+
+===== net.minecraft.world.entity.player.Player | message|overlay|actionbar =====
+  public void sendSystemMessage(net.minecraft.network.chat.Component);
+  public void sendOverlayMessage(net.minecraft.network.chat.Component);
+
+===== net.minecraft.world.level.Level | random =====
+  public abstract void explode(net.minecraft.world.entity.Entity, net.minecraft.world.damagesource.DamageSource, net.minecraft.world.level.ExplosionDamageCalculator, double, double, double, float, boolean, net.minecraft.world.level.Level$ExplosionInteraction, net.minecraft.core.particles.ParticleOptions, net.minecraft.core.particles.ParticleOptions, net.minecraft.util.random.WeightedList<net.minecraft.core.particles.ExplosionParticleInfo>, net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent>);
+  public net.minecraft.util.RandomSource getRandom();
+  public net.minecraft.core.BlockPos getBlockRandomPos(int, int, int, int);
+
+===== net.minecraft.world.entity.Entity | random =====
+  public double getRandomX(double);
+  public double getRandomY(double);
+  public double getRandomY();
+  public double getRandomZ(double);
+  public net.minecraft.util.RandomSource getRandom();
+
+===== net.minecraft.client.renderer.entity.MobRenderer =====
+Compiled from "MobRenderer.java"
+public abstract class net.minecraft.client.renderer.entity.MobRenderer<T extends net.minecraft.world.entity.Mob, S extends net.minecraft.client.renderer.entity.state.LivingEntityRenderState, M extends net.minecraft.client.model.EntityModel<? super S>> extends net.minecraft.client.renderer.entity.LivingEntityRenderer<T, S, M> {
+  public net.minecraft.client.renderer.entity.MobRenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context, M, float);
+}
+
+===== net.neoforged.neoforge.client.event.RegisterGuiLayersEvent =====
+Compiled from "RegisterGuiLayersEvent.java"
+public class net.neoforged.neoforge.client.event.RegisterGuiLayersEvent extends net.neoforged.bus.api.Event implements net.neoforged.fml.event.IModBusEvent {
+  public net.neoforged.neoforge.client.event.RegisterGuiLayersEvent(java.util.List<net.neoforged.neoforge.client.gui.GuiLayerManager$NamedLayer>);
+  public void registerBelowAll(net.minecraft.resources.Identifier, net.neoforged.neoforge.client.gui.GuiLayer);
+  public void registerBelow(net.minecraft.resources.Identifier, net.minecraft.resources.Identifier, net.neoforged.neoforge.client.gui.GuiLayer);
+  public void registerAbove(net.minecraft.resources.Identifier, net.minecraft.resources.Identifier, net.neoforged.neoforge.client.gui.GuiLayer);
+  public void registerAboveAll(net.minecraft.resources.Identifier, net.neoforged.neoforge.client.gui.GuiLayer);
+  public void replaceLayer(net.minecraft.resources.Identifier, net.neoforged.neoforge.client.gui.GuiLayer);
+  public void wrapLayer(net.minecraft.resources.Identifier, java.util.function.UnaryOperator<net.neoforged.neoforge.client.gui.GuiLayer>);
+}
+
+===== net.minecraft.client.gui.components.Button | builder|render|extract =====
+  public static net.minecraft.client.gui.components.Button$Builder builder(net.minecraft.network.chat.Component, net.minecraft.client.gui.components.Button$OnPress);
+
+===== net.minecraft.client.gui.components.AbstractWidget | render|extract =====
+public abstract class net.minecraft.client.gui.components.AbstractWidget implements net.minecraft.client.gui.layouts.LayoutElement,net.minecraft.client.gui.components.Renderable,net.minecraft.client.gui.components.events.GuiEventListener,net.minecraft.client.gui.narration.NarratableEntry {
+  public final void extractRenderState(net.minecraft.client.gui.GuiGraphicsExtractor, int, int, float);
+  public void extractScrollingStringOverContents(net.minecraft.client.gui.ActiveTextCollector, net.minecraft.network.chat.Component, int);
+
+===== net.minecraft.client.gui.GuiGraphicsExtractor =====
+Compiled from "GuiGraphicsExtractor.java"
+public class net.minecraft.client.gui.GuiGraphicsExtractor implements net.neoforged.neoforge.client.extensions.GuiGraphicsExtractorExtension {
+  public net.minecraft.client.gui.GuiGraphicsExtractor(net.minecraft.client.Minecraft, net.minecraft.client.renderer.state.gui.GuiRenderState, int, int);
+  public void requestCursor(com.mojang.blaze3d.platform.cursor.CursorType);
+  public void applyCursor(com.mojang.blaze3d.platform.Window);
+  public int guiWidth();
+  public int guiHeight();
+  public org.joml.Matrix3x2fStack pose();
+  public void nextStratum();
+  public void blurBeforeThisStratum();
+  public void enableScissor(int, int, int, int);
+  public void disableScissor();
+  public boolean containsPointInScissor(int, int);
+  public void horizontalLine(int, int, int, int);
+  public void verticalLine(int, int, int, int);
+  public void fill(int, int, int, int, int);
+  public void fill(com.mojang.renderpearl.api.pipeline.RenderPipeline, int, int, int, int, int);
+  public void fillGradient(int, int, int, int, int, int);
+  public void fill(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.client.gui.render.TextureSetup, int, int, int, int);
+  public void outline(int, int, int, int, int);
+  public void textHighlight(int, int, int, int, boolean);
+  public void text(net.minecraft.client.gui.Font, java.lang.String, int, int, int);
+  public void text(net.minecraft.client.gui.Font, java.lang.String, int, int, int, boolean);
+  public void text(net.minecraft.client.gui.Font, net.minecraft.util.FormattedCharSequence, int, int, int);
+  public void text(net.minecraft.client.gui.Font, net.minecraft.util.FormattedCharSequence, int, int, int, boolean);
+  public void text(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int, int);
+  public void text(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int, int, boolean);
+  public void centeredText(net.minecraft.client.gui.Font, java.lang.String, int, int, int);
+  public void centeredText(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int, int);
+  public void centeredText(net.minecraft.client.gui.Font, net.minecraft.util.FormattedCharSequence, int, int, int);
+  public int textWithWordWrap(net.minecraft.client.gui.Font, net.minecraft.network.chat.FormattedText, int, int, int, int);
+  public int textWithWordWrap(net.minecraft.client.gui.Font, net.minecraft.network.chat.FormattedText, int, int, int, int, boolean);
+  public void textWithBackdrop(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int, int, int);
+  public void blit(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, float, float, int, int, int, int, int);
+  public void blit(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, float, float, int, int, int, int);
+  public void blit(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, float, float, int, int, int, int, int, int);
+  public void blit(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, float, float, int, int, int, int, int, int, int);
+  public void blit(net.minecraft.resources.Identifier, int, int, int, int, float, float, float, float);
+  public void blit(com.mojang.renderpearl.api.textures.GpuTextureView, com.mojang.renderpearl.api.textures.GpuSampler, int, int, int, int, float, float, float, float);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, int, int);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, int, int, float);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, int, int, int);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, int, int, int, int, int, int);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.resources.Identifier, int, int, int, int, int, int, int, int, int);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, int, int, int);
+  public void blitSprite(com.mojang.renderpearl.api.pipeline.RenderPipeline, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, int, int, int, int);
+  public void item(net.minecraft.world.item.ItemStack, int, int);
+  public void item(net.minecraft.world.item.ItemStack, int, int, int);
+  public void item(net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack, int, int, int);
+  public void fakeItem(net.minecraft.world.item.ItemStack, int, int);
+  public void fakeItem(net.minecraft.world.item.ItemStack, int, int, int);
+  public void itemDecorations(net.minecraft.client.gui.Font, net.minecraft.world.item.ItemStack, int, int);
+  public void itemDecorations(net.minecraft.client.gui.Font, net.minecraft.world.item.ItemStack, int, int, java.lang.String);
+  public void map(net.minecraft.client.renderer.state.MapRenderState);
+  public void entity(net.minecraft.client.renderer.entity.state.EntityRenderState, float, org.joml.Vector3fc, org.joml.Quaternionfc, org.joml.Quaternionfc, int, int, int, int);
+  public void skin(net.minecraft.client.model.Model$Simple, net.minecraft.resources.Identifier, float, float, float, float, int, int, int, int);
+  public void book(net.minecraft.client.model.object.book.BookModel, net.minecraft.resources.Identifier, float, float, float, int, int, int, int);
+  public void bannerPattern(net.minecraft.client.model.object.banner.BannerFlagModel, net.minecraft.world.item.DyeColor, net.minecraft.world.level.block.entity.BannerPatternLayers, int, int, int, int);
+  public void profilerChart(java.util.List<net.minecraft.util.profiling.ResultField>, int, int, int, int);
+  public void setTooltipForNextFrame(net.minecraft.network.chat.Component, int, int);
+  public void setTooltipForNextFrame(java.util.List<net.minecraft.util.FormattedCharSequence>, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, net.minecraft.world.item.ItemStack, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, net.minecraft.world.item.ItemStack, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, net.minecraft.world.item.ItemStack, int, int, net.minecraft.resources.Identifier);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, net.minecraft.world.item.ItemStack, int, int, net.minecraft.resources.Identifier, boolean);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, int, int, net.minecraft.resources.Identifier);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, int, int, net.minecraft.resources.Identifier, boolean);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.util.FormattedCharSequence>, java.util.Optional<net.minecraft.world.inventory.tooltip.TooltipComponent>, net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner, int, int, boolean, net.minecraft.resources.Identifier);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, net.minecraft.network.chat.Component, int, int, net.minecraft.resources.Identifier);
+  public void setComponentTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, int, int);
+  public void setComponentTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.network.chat.Component>, int, int, net.minecraft.resources.Identifier);
+  public void setComponentTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<? extends net.minecraft.network.chat.FormattedText>, int, int, net.minecraft.world.item.ItemStack);
+  public void setComponentTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<? extends net.minecraft.network.chat.FormattedText>, int, int, net.minecraft.world.item.ItemStack, net.minecraft.resources.Identifier);
+  public void setComponentTooltipFromElementsForNextFrame(net.minecraft.client.gui.Font, java.util.List<com.mojang.datafixers.util.Either<net.minecraft.network.chat.FormattedText, net.minecraft.world.inventory.tooltip.TooltipComponent>>, int, int, net.minecraft.world.item.ItemStack);
+  public void setComponentTooltipFromElementsForNextFrame(net.minecraft.client.gui.Font, java.util.List<com.mojang.datafixers.util.Either<net.minecraft.network.chat.FormattedText, net.minecraft.world.inventory.tooltip.TooltipComponent>>, int, int, net.minecraft.world.item.ItemStack, net.minecraft.resources.Identifier);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<? extends net.minecraft.util.FormattedCharSequence>, int, int);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<? extends net.minecraft.util.FormattedCharSequence>, int, int, net.minecraft.resources.Identifier);
+  public void setTooltipForNextFrame(net.minecraft.client.gui.Font, java.util.List<net.minecraft.util.FormattedCharSequence>, net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner, int, int, boolean);
+  public void tooltip(net.minecraft.client.gui.Font, java.util.List<net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent>, int, int, net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner, net.minecraft.resources.Identifier, boolean);
+  public void tooltip(net.minecraft.client.gui.Font, java.util.List<net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent>, int, int, net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner, net.minecraft.resources.Identifier, boolean, net.minecraft.world.item.ItemStack);
+  public void setPreeditOverlay(net.minecraft.client.gui.components.Renderable);
+  public void extractDeferredElements(int, int, float);
+  public void componentHoverEffect(net.minecraft.client.gui.Font, net.minecraft.network.chat.Style, int, int);
+  public void submitGuiElementRenderState(net.minecraft.client.renderer.state.gui.GuiElementRenderState);
+  public void submitPictureInPictureRenderState(net.minecraft.client.renderer.state.gui.pip.PictureInPictureRenderState);
+  public net.minecraft.client.gui.navigation.ScreenRectangle peekScissorStack();
+  public net.minecraft.client.renderer.texture.TextureAtlasSprite getSprite(net.minecraft.client.resources.model.sprite.SpriteId);
+  public net.minecraft.client.gui.ActiveTextCollector textRendererForWidget(net.minecraft.client.gui.components.AbstractWidget, net.minecraft.client.gui.GuiGraphicsExtractor$HoveredTextEffects);
+  public net.minecraft.client.gui.ActiveTextCollector textRenderer();
+  public net.minecraft.client.gui.ActiveTextCollector textRenderer(net.minecraft.client.gui.GuiGraphicsExtractor$HoveredTextEffects);
+  public net.minecraft.client.gui.ActiveTextCollector textRenderer(net.minecraft.client.gui.GuiGraphicsExtractor$HoveredTextEffects, java.util.function.Consumer<net.minecraft.network.chat.Style>);
+}
+
+===== net.minecraft.client.gui.Gui | screen|hide|Screen =====
+  public net.minecraft.client.gui.screens.Screen screen();
+  public void setScreen(net.minecraft.client.gui.screens.Screen);
+  public net.minecraft.client.gui.screens.Overlay overlay();
+  public void setOverlay(net.minecraft.client.gui.screens.Overlay);
+  public void setPauseScreen(boolean, boolean);
+  public void openChatScreen(net.minecraft.client.gui.components.ChatComponent$ChatMethod);
+  public java.lang.Runnable buildInitialScreens(net.minecraft.client.GameLoadCookie);
+  public boolean canInterruptScreen();
+  public void pushScreenLayer(net.minecraft.client.gui.screens.Screen);
+  public void popScreenLayer();
+  public void clearScreenLayers();
+  public void resizeScreenLayers(int, int);
+
+===== net.minecraft.client.Minecraft | Screen =====
+  public final net.minecraft.client.gui.components.debug.DebugScreenEntryList debugEntries;
+  public void fullscreenStateChanged(boolean);
+  public net.minecraft.client.gui.screens.worldselection.WorldOpenFlows createWorldOpenFlows();
+  public void disconnectWithSavingScreen();
+  public void disconnectWithProgressScreen();
+  public void disconnectWithProgressScreen(boolean);
+  public void disconnect(net.minecraft.client.gui.screens.Screen, boolean);
+  public void disconnect(net.minecraft.client.gui.screens.Screen, boolean, boolean);
+  public void clearClientLevel(net.minecraft.client.gui.screens.Screen);
+  public void setScreenAndShow(net.minecraft.client.gui.screens.Screen);
+  public net.minecraft.network.chat.Component grabPanoramixScreenshot(java.io.File);
+  public net.minecraft.client.gui.screens.social.PlayerSocialManager getPlayerSocialManager();
+  public net.minecraft.client.gui.components.DebugScreenOverlay getDebugOverlay();
+  public boolean canInterruptScreen();
+
+===== GuiLayer (source) =====
+
+package net.neoforged.neoforge.client.gui;
+
+import net.minecraft.client.DeltaTracker;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
+
+@FunctionalInterface
+public interface GuiLayer {
+    void render(GuiGraphicsExtractor guiGraphics, DeltaTracker deltaTracker);
+}
+Compiled from "SpiderModel.java"
+public class net.minecraft.client.model.monster.spider.SpiderModel extends net.minecraft.client.model.EntityModel<net.minecraft.client.renderer.entity.state.LivingEntityRenderState> {
+  public net.minecraft.client.model.monster.spider.SpiderModel(net.minecraft.client.model.geom.ModelPart);
+  public static net.minecraft.client.model.geom.builders.LayerDefinition createSpiderBodyLayer();
+  public void setupAnim(net.minecraft.client.renderer.entity.state.LivingEntityRenderState);
+  public void setupAnim(java.lang.Object);
+}
+
+===== net.minecraft.client.model.geom.ModelLayers | SPIDER =====
+  public static final net.minecraft.client.model.geom.ModelLayerLocation CAVE_SPIDER;
+  public static final net.minecraft.client.model.geom.ModelLayerLocation SPIDER;
+
+===== LivingEntityRenderer (protected) =====
+  public net.minecraft.client.renderer.entity.LivingEntityRenderer(net.minecraft.client.renderer.entity.EntityRendererProvider$Context, M, float);
+  public abstract net.minecraft.resources.Identifier getTextureLocation(S);
+
+===== Mob (protected) ai =====
+  protected void registerGoals();
+  public int getAmbientSoundInterval();
+  protected net.minecraft.sounds.SoundEvent getAmbientSound();
+  protected void customServerAiStep(net.minecraft.server.level.ServerLevel);
+
+===== Entity hurtMarked =====
+  public abstract boolean hurtServer(net.minecraft.server.level.ServerLevel, net.minecraft.world.damagesource.DamageSource, float);
+  public void setDeltaMovement(net.minecraft.world.phys.Vec3);
+  public void setDeltaMovement(double, double, double);
+
+===== vanilla forest.json (spawners) =====
+[]
+
+===== loot table spider.json =====
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ],
+          "name": "minecraft:string"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "condition": {
+        "type": "minecraft:killed_by_player"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": -1
+              }
+            },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ],
+          "name": "minecraft:spider_eye"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:entities/spider"
+}
