@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="hxh"
+version="${mod_version}"
+displayName="Hunter x Hunter : Nen"
+authors="Maxence"
+description='''
+Transforme Minecraft en action-RPG centré sur le Nen : éveil, catégories, Ren / Zetsu / En,
+Hatsu à débloquer et Fourmis-Chimères. Mod de fan non officiel.
+'''
+
+[[dependencies.hxh]]
+modId="neoforge"
+type="required"
+versionRange="[${neo_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hxh]]
+modId="minecraft"
+type="required"
+versionRange="[26.3,26.4)"
+ordering="NONE"
+side="BOTH"

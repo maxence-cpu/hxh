@@ -1,0 +1,32 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev'
+}
+
+version = mod_version
+group = 'com.maxence.hxh'
+base { archivesName = 'hxh-nen' }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+
+    mods {
+        hxh { sourceSet(sourceSets.main) }
+    }
+}
+
+// Injecte la version du mod et de NeoForge dans neoforge.mods.toml
+processResources {
+    def props = [mod_version: mod_version, neo_version: neo_version]
+    inputs.properties props
+    filesMatching('META-INF/neoforge.mods.toml') { expand props }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
