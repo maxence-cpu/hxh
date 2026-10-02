@@ -49,3 +49,7 @@ dumpg net.minecraft.client.model.geom.ModelLayers "SPIDER"
 section "LivingEntityRenderer (protected)"; javap -cp "$CP" -protected net.minecraft.client.renderer.entity.LivingEntityRenderer | grep -iE "texture|createRenderState|LivingEntityRenderer\(" >> $OUT
 section "Mob (protected) ai"; javap -cp "$CP" -protected net.minecraft.world.entity.Mob | grep -iE "customServerAiStep|registerGoals|getAmbientSound" >> $OUT
 section "Entity hurtMarked"; javap -cp "$CP" -public net.minecraft.world.entity.Entity | grep -iE "hurtMarked|setDeltaMovement|hurtServer" >> $OUT
+section "vanilla forest.json (spawners)"
+unzip -p "$JAR" data/minecraft/worldgen/biome/forest.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d.get('spawners',{}).get('monster',[])[:2], indent=1))" >> $OUT 2>&1
+section "loot table spider.json"
+unzip -p "$JAR" data/minecraft/loot_table/entities/spider.json >> $OUT 2>&1
