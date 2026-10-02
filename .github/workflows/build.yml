@@ -39,9 +39,18 @@ jobs:
           set -o pipefail
           gradle build -Pneo_version="$NEO" -Pmdg_version="$MDG" --stacktrace 2>&1 | tee build.log
 
-      - name: Envoyer le journal d'erreurs sur la branche ci-logs
-        if: failure()
+      - name: Tester le démarrage d'un monde (serveur de test)
+        id: worldtest
         run: |
+          set -o pipefail
+          timeout 600 gradle runGameTestServer -Pneo_version="$NEO" -Pmdg_version="$MDG" 2>&1 | tee world.log
+
+      - name: Envoyer les journaux sur la branche ci-logs
+        if: always()
+        run: |
+          touch build.log world.log
+          cp run/logs/latest.log /tmp/latest.log 2>/dev/null || touch /tmp/latest.log
+          cp world.log /tmp/world.log
           echo "NeoForge $NEO / MDG $MDG / commit $GITHUB_SHA" > /tmp/header.txt
           cat /tmp/header.txt build.log > /tmp/build.log
           bash .github/scripts/api-dump.sh && cp api.txt /tmp/api.txt
@@ -51,7 +60,8 @@ jobs:
           git rm -rfq --cached .
           cp /tmp/build.log build.log
           cp /tmp/api.txt api.txt || true
-          git add -f build.log api.txt
+          cp /tmp/world.log world.log; cp /tmp/latest.log latest.log
+          git add -f build.log api.txt world.log latest.log
           git commit -qm "Journal de compilation $GITHUB_RUN_NUMBER"
           git push -f origin ci-logs
 

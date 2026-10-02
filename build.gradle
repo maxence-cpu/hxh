@@ -15,6 +15,11 @@ neoForge {
     runs {
         client { client() }
         server { server(); programArgument '--nogui' }
+        // Démarre un serveur, crée un monde, lance les GameTests puis s'arrête : sert de test de démarrage en CI.
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'hxh'
+        }
     }
 
     mods {
